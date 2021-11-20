@@ -6,21 +6,19 @@ import Head from 'next/head';
 //por ser typescrip necesito definir el tipo de variable, en este caso home es tipo NextPage
 const Home: NextPage = () => {
   return (
-    <div className='bg-blue-500'>pagina de index
-    <Head>
-      <title>home | gestion de proyectos</title>
-    </Head>
-      
-      
-      <Link href= 'admin/user'/*asi podemos crear las rutas en nextjs */>
-      <p className='cursor-pointer'>ir a pagina admin user</p>
+    <div className='bg-green-500'>
+      <Head>
+        <title>Home | Gestión de Proyectos</title>
+      </Head>
+      <p>Pagina de Index</p>
+      <Link href='/admin/usuarios'>
+        <a className='cursor-pointer'>Ir a admin usuarios</a>
       </Link>
       <div>
-      <i className="fas fa-home"></i>
+        <i className='fas fa-home' />
       </div>
-
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
